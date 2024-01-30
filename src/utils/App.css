@@ -6,11 +6,11 @@
   background: var(--black);
   position: relative;
 }
-.white-gradient {
+.green-gradient {
   position: absolute;
   width: 20rem;
   height: 20rem;
-  background: #01ef9247;
+  background: #01ef9230;
   filter: blur(100px);
   border-radius: 100px;
 }
