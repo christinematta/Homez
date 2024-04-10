@@ -1,0 +1,36 @@
+.f-container {
+  justify-content: space-between;
+  color: var(--secondary);
+}
+.f-left{
+  gap: 1rem;
+}
+.f-left img {
+  width: 200px;
+  height: 65px;
+}
+
+.f-wrapper {
+  background: rgba(0, 0, 0, 0.91);
+}
+.f-right .green-gradient{
+  height: 8rem;
+  left:70%;
+  bottom: 3rem;
+}
+.f-right>:nth-child(2){
+  color:#1ea16f;
+}
+.f-menu {
+  gap: 1.5rem;
+  margin-top: 1.5rem;
+  font-weight: 500;
+}
+@media (max-width:768px) {
+  .f-container{
+    justify-content: center;
+  }
+  .f-right{
+   text-align: center;
+  }
+}

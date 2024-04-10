@@ -1,23 +1,32 @@
 import "./Hero.css";
 import { HiLocationMarker } from "react-icons/hi";
-import CountUp from 'react-countup';
+import CountUp from "react-countup";
+import { animate, motion } from "framer-motion";
 export default function Hero() {
   return (
     <section className="hero-wrapper">
       <div className="paddings innerWidth flexCenter hero-container">
         <div className="flexColStart hero-left">
           <div className="hero-title">
-            <h1>
+            <motion.h1
+              initial={{ y: "2rem", opacity: 0 }}
+              animate={{ y: 0, opacity: 1 }}
+              transition={{ duration: 4, type: "spring" }}
+            >
               Discover <br />
               Most Suitable <br />
               Property
-            </h1>
+            </motion.h1>
             <div className="orange-circle"></div>
           </div>
 
           <div className="flexColStart hero-desc">
-            <span className="secondaryText">Find a variety of properties that suit you very easilty</span>
-            <span className="secondaryText">Forget all difficulties in finding a residence for you</span>
+            <span className="secondaryText">
+              Find a variety of properties that suit you very easilty
+            </span>
+            <span className="secondaryText">
+              Forget all difficulties in finding a residence for you
+            </span>
           </div>
 
           <div className="flexCenter search-bar">
@@ -49,14 +58,18 @@ export default function Hero() {
               </span>
               <span className="secondaryText">Award Winning</span>
             </div>
-
           </div>
         </div>
 
         <div className="flexCenter hero-right">
-          <div className="image-container">
+          <motion.div
+            initial={{ x: "7rem", opacity: 0 }}
+            animate={{ x: 0, opacity: 1 }}
+            transition={{ duration: 4, type: "spring" }}
+            className="image-container"
+          >
             <img src="./hero-image.jpg" alt="hero-image" />
-          </div>
+          </motion.div>
         </div>
       </div>
     </section>

@@ -1,0 +1,31 @@
+.inner-container{
+  gap: 1.5rem;
+  background:#1ea16f;
+  padding: 2rem;
+  border-radius: 10px;
+  /* border: 6px solid #26996d; */
+  box-shadow: 2px 3px 8px #145f42;
+  text-align: center;
+}
+
+.inner-container .primaryText{
+  color: white;
+  font-size: 600;
+}
+.inner-container .secondaryText{
+  color:
+  rgba(255, 255, 255, 0.771);
+  text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.413);
+}
+.inner-container .button{
+  background: white;
+  color: #1ea16f;
+  text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.167);
+  transition: all 300ms ease-in;
+  scale: 1;
+  transition: all 500ms ease-in;
+}
+.inner-container .button:hover{
+  scale: 1;
+
+}

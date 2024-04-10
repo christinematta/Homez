@@ -1,4 +1,5 @@
 .c-wrapper{
+  justify-content: space-around;
   padding-top: 1rem;
 }
 .c-container {
@@ -9,4 +10,9 @@
 
 .c-container > img {
   width: 10rem;
+}
+@media (max-width:768px) {
+  .c-container {
+    flex-direction: column;
+  }
 }
