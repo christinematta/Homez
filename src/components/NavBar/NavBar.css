@@ -22,6 +22,7 @@
     display: block;
   }
   .h-menu{
+    /* visibility: hidden; */
     color: var(--black);
     position: absolute;
     top: 3rem;
